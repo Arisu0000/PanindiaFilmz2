@@ -11,7 +11,7 @@ def is_enabled(value, default):
         return default
 
 class script(object):
-    HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://t.me/+ifF6s5E2jzcyNDU1')
+    HOME_BUTTONURL_UPDATES = environ.get("HOME_BUTTONURL_UPDATES", 'https://t.me/BoTzUpdates0')
     START_TXT = environ.get("START_TXT", '''<b>Hello {} 👋🏻 ɪ ᴀᴍ ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ᴀᴜᴛᴏꜰɪʟᴛᴇʀ + ᴍᴀɴᴜᴀʟꜰɪʟᴛᴇʀ + ꜰɪʟᴇsᴛᴏʀᴇ ʙᴏᴛ🔥.
 
 ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ɪ ᴡɪʟʟ ɢɪᴠᴇ ᴍᴏᴠɪᴇs ᴏʀ sᴇʀɪᴇs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴏN ᴘᴍ✨ !!</b>''')
@@ -23,8 +23,8 @@ class script(object):
 👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/PanindiaFilmz:/><b>𝐀𝐫𝐢𝐬𝐮✨</b></a>\n
 📝 ʟᴀɴɢᴜᴀɢᴇ : ᴘʏʀᴏɢʀᴀᴍ\n
 📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ : ᴘʏᴛʜᴏɴ 3\n
-📡 ʜᴏsᴛᴇᴅ ᴏɴ : ʜᴇʀᴏᴋᴜ\n
-📢 ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/+ifF6s5E2jzcyNDU1><b></b>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>\n
+📡 ʜᴏsᴛᴇᴅ ᴏɴ : VPS\n
+📢 ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/BoTzUpdates0><b></b>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>\n
 🌟 ᴠᴇʀsɪᴏɴ : ᴠ 4.0\n</b></i>"""
     SOURCE_TXT = """<b>𝐂𝐫𝐞𝐚𝐭𝐞 𝐎𝐧𝐞 𝐋𝐢𝐤𝐞 𝐓𝐡𝐢𝐬:</b>
 » I will Create One Bot For You FOR PAID<b>
