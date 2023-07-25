@@ -51,7 +51,7 @@ async def start(client, message):
             InlineKeyboardButton('⚡ 𝐏𝐚𝐧𝐈𝐧𝐝𝐢𝐚𝐅𝐥𝐢𝐦𝐙 ⚡', url='https://t.me/PanindiaFilmz'),
             InlineKeyboardButton('❣️ 𝐁𝐨𝐓𝐙 ❣️', url='https://t.me/+ifF6s5E2jzcyNDU1')
             ],[
-            InlineKeyboardButton('📂 𝐌𝐚𝐢𝐧 📂', url=f"https://t.me/PIFOficial"),
+            InlineKeyboardButton('📂 𝐌𝐚𝐢𝐧 𝐅𝐨𝐫 𝐀𝐥𝐥 📂', url=f"https://t.me/PIFOficial"),
             ],[
             InlineKeyboardButton('🌟 𝐌𝐲 𝐒𝐞𝐥𝐟 🌟', callback_data='about')
         ]]
