@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('❣️ 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 ❣️', url='https://t.me/+ifF6s5E2jzcyNDU1')
+                InlineKeyboardButton('❣️ 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 ❣️', url='https://t.me/BoTzUpdates0')
             ],
             [
                 InlineKeyboardButton('⚡ 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ⚡', url=f"https://t.me/PanindiaFilmz"),
@@ -49,7 +49,7 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
             InlineKeyboardButton('⚡ 𝐏𝐚𝐧𝐢𝐧𝐝𝐢𝐚𝐅𝐢𝐥𝐦𝐳 ⚡', url='https://t.me/PanindiaFilmz'),
-            InlineKeyboardButton('❣️ 𝐁𝐨𝐓𝐙 ❣️', url='https://t.me/+ifF6s5E2jzcyNDU1')
+            InlineKeyboardButton('❣️ 𝐁𝐨𝐓𝐙 ❣️', url='https://t.me/BoTzUpdates0')
             ],[
             InlineKeyboardButton('❣️ 𝐏𝐈𝐅𝐎𝐟𝐢𝐜𝐢𝐚𝐥 ❣️', url=f"https://t.me/PIFOficial"),
             ],[
@@ -96,7 +96,7 @@ async def start(client, message):
             InlineKeyboardButton('✨ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ✨', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('⚡ 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ⚡', url='https://t.me/PanindiaFilmz'),
-            InlineKeyboardButton('❣️ 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 ❣️', url='https://t.me/+ifF6s5E2jzcyNDU1')
+            InlineKeyboardButton('❣️ 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 ❣️', url='https://t.me/BoTzUpdates0')
             ],[
             InlineKeyboardButton('💌 𝐇𝐄𝐋𝐏 💌', callback_data='help'),
             InlineKeyboardButton('🌟 𝐀𝐁𝐎𝐔𝐓 🌟', callback_data='about')
