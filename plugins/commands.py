@@ -50,10 +50,10 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('✨ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ✨', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚡ 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ⚡', url='https://t.me/PanindiaFilmz'),
-            InlineKeyboardButton('❣️ 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 ❣️', url='https://t.me/+ifF6s5E2jzcyNDU1')
+            InlineKeyboardButton('⚡ 𝐌𝐚𝐢𝐧 ⚡', url='https://t.me/PanindiaFilmz'),
+            InlineKeyboardButton('❣️ 𝐁𝐨𝐓𝐙 ❣️', url='https://t.me/+ifF6s5E2jzcyNDU1')
             ],[
-            InlineKeyboardButton('⚡ 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ⚡', url=f"https://t.me/PanindiaFilmz"),
+            InlineKeyboardButton('⚡ 𝐏𝐚𝐧𝐈𝐧𝐝𝐢𝐚𝐅𝐥𝐢𝐦𝐙 ⚡', url=f"https://t.me/PanindiaFilmz"),
             ],[
             InlineKeyboardButton('💌 𝐇𝐄𝐋𝐏 💌', callback_data='help'),
             InlineKeyboardButton('🌟 𝐀𝐁𝐎𝐔𝐓 🌟', callback_data='about')
