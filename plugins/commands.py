@@ -31,6 +31,9 @@ async def start(client, message):
             [
                 InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
             ]
+            [
+                InlineKeyboardButton('⚡ 𝐏𝐚𝐧𝐈𝐧𝐝𝐢𝐚𝐅𝐥𝐢𝐦𝐙  ⚡', url=f"https://t.me/PanindiaFilmz"),
+            ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
@@ -49,6 +52,8 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('⚡ 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ⚡', url='https://t.me/PanindiaFilmz'),
             InlineKeyboardButton('❣️ 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 ❣️', url='https://t.me/+ifF6s5E2jzcyNDU1')
+            ],[
+            InlineKeyboardButton('⚡ 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ⚡', url=f"https://t.me/PanindiaFilmz"),
             ],[
             InlineKeyboardButton('💌 𝐇𝐄𝐋𝐏 💌', callback_data='help'),
             InlineKeyboardButton('🌟 𝐀𝐁𝐎𝐔𝐓 🌟', callback_data='about')
