@@ -48,12 +48,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚡ 𝐏𝐚𝐧𝐢𝐧𝐝𝐢𝐚𝐅𝐢𝐥𝐦𝐳 ⚡', url='https://t.me/PanindiaFilmz'),
-            InlineKeyboardButton('❣️ 𝐁𝐨𝐓𝐙 ❣️', url='https://t.me/BoTzUpdates0')
+            InlineKeyboardButton('🔺 ᴘᴀɴɪɴᴅɪᴀꜰɪʟᴍᴢ 🔻', url='https://t.me/PanindiaFilmz'),
+            InlineKeyboardButton('🔺 ʙᴏᴛᴢ ᴀʀᴇᴀ 🔻', url='https://t.me/BoTzUpdates0')
             ],[
-            InlineKeyboardButton('❣️ 𝐏𝐈𝐅𝐎𝐟𝐢𝐜𝐢𝐚𝐥 ❣️', url=f"https://t.me/PIFOficial"),
+            InlineKeyboardButton('🔺 ™ ᴘɪꜰ  🔻', url=f"https://t.me/PIFOficial"),
             ],[
-            InlineKeyboardButton('❣️ 𝐆𝐫𝐨𝐮𝐩 ❣️', url=f"https://t.me/+oixWhCGlvbcyMzQ1"),
+            InlineKeyboardButton('🔺 ᴍᴏᴠɪᴇs ʀᴇǫᴜᴇsᴛ ɢʀᴏᴜᴘ 🔻', url=f"https://t.me/+oixWhCGlvbcyMzQ1"),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
