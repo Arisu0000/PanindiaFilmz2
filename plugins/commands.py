@@ -251,9 +251,7 @@ async def start(client, message):
         caption=f_caption,
         reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('sᴜʙsᴄʀɪʙᴇ', url='https://t.me/PanindiaFilmz') ] ] ),
         protect_content=True if pre == 'filep' else False,
-        )
-  await asyncio.sleep(10)
-  await l.delete()                
+        )              
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
