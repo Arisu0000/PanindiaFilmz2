@@ -776,7 +776,7 @@ async def advantage_spell_chok(msg):
     gs_parsed = []
     if not g_s:
         k = await msg.reply("I couldn't find any movie in that name.")
-        await asyncio.sleep(8)
+        await asyncio.sleep(5)
         await k.delete()
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
@@ -817,8 +817,8 @@ async def advantage_spell_chok(msg):
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
     l = await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?",
-       await asyncio.sleep(5,) 
-       await l.delete()             
+    await asyncio.sleep(10) 
+    await l.delete()             
            reply_markup=InlineKeyboardMarkup(btn))
 
 
