@@ -245,7 +245,9 @@ async def start(client, message):
             f_caption=f_caption
     if f_caption is None:
         f_caption = f"{files.file_name}"
-    await client.send_cached_media(
+   l = await client.send_cached_media(
+   await asyncio.sleep(10)
+   await l.delete()
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
