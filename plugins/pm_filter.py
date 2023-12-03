@@ -422,7 +422,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{title}"
         await query.answer()
-        await client.send_cached_media(
+       l = await client.send_cached_media(
+           await asyncio.sleep(05) 
+           await l.delete()
             chat_id=query.from_user.id,
             file_id=file_id,
             caption=f_caption,
@@ -816,8 +818,10 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?",
-                    reply_markup=InlineKeyboardMarkup(btn))
+    l = await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?",
+       await asyncio.sleep(05) 
+       await l.delete()             
+           reply_markup=InlineKeyboardMarkup(btn))
 
 
 
