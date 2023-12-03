@@ -422,9 +422,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{title}"
         await query.answer()
-       l = await client.send_cached_media(
-           await asyncio.sleep(05) 
-           await l.delete()
+        await client.send_cached_media(
             chat_id=query.from_user.id,
             file_id=file_id,
             caption=f_caption,
