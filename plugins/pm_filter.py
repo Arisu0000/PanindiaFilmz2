@@ -164,9 +164,9 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('𝐓𝐇𝐈𝐒 𝐌𝐎𝐕𝐈𝐄 𝐈𝐒 𝐍𝐎𝐓 𝐘𝐄𝐓 𝐑𝐄𝐋𝐄𝐀𝐒𝐄𝐃 𝐎𝐑 𝐀𝐃𝐃𝐄𝐃 𝐓𝐎 𝐃𝐀𝐓𝐀𝐁𝐀𝐒𝐄 💌')
+            l = await query.message.edit('𝐓𝐇𝐈𝐒 𝐌𝐎𝐕𝐈𝐄 𝐈𝐒 𝐍𝐎𝐓 𝐘𝐄𝐓 𝐑𝐄𝐋𝐄𝐀𝐒𝐄𝐃 𝐎𝐑 𝐀𝐃𝐃𝐄𝐃 𝐓𝐎 𝐃𝐀𝐓𝐀𝐁𝐀𝐒𝐄 💌')
             await asyncio.sleep(10)
-            await k.delete()
+            await l.delete()
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
@@ -775,9 +775,9 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I couldn't find any movie in that name.")
-        await asyncio.sleep(5)
-        await k.delete()
+        l = await msg.reply("I couldn't find any movie in that name.")
+        await asyncio.sleep(4)
+        await l.delete()
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
     gs = list(filter(regex.match, g_s))
@@ -804,9 +804,9 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
-        await asyncio.sleep(8)
-        await k.delete()
+        l = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        await asyncio.sleep(3)
+        await l.delete()
         return
     SPELL_CHECK[msg.id] = movielist
     btn = [[
@@ -816,8 +816,10 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?",         
-           reply_markup=InlineKeyboardMarkup(btn))
+    l = await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?",         
+    await asyncio.sleep(10)
+    await l.delete()
+        reply_markup=InlineKeyboardMarkup(btn))
 
 
 
